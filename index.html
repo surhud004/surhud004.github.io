@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Surhud</title>
+	<!-- Meta tags for responsive design for devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Icon -->
+	<link rel="icon" href="assets/logo.png">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+</head>
+<body>
+	<!--navbar dark theme, expand at medium width, fixed to the top, padding top bottom zero-->
+	<nav id="mainNavbar" class="navbar fixed-top navbar-dark navbar-expand-md py-0">
+		<a href="index.html" class="navbar-brand">
+	    	<img src="assets/logo.png" width="30" height="30" class="d-inline-block align-top" alt="logo">
+	    	Surhud
+	  	</a>
+		<!--navbar toggler button collapse and hide navLinks content at medium width, aria label for screen reader software for blind-->
+		<button class="navbar-toggler order-2 order-md-1" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle Navigation">
+			<span class="navbar-toggler-icon order-2 order-md-1"></span>
+		</button>
+		<!--switch control for light and dark modes-->
+		<div class="custom-control custom-switch order-1 order-md-2">
+  			<input type="checkbox" class="custom-control-input" id="lightSwitch">
+  			<label id="lightBtn" class="custom-control-label" for="lightSwitch">Light Mode</label>
+		</div>
+		<div id="navLinks" class="collapse navbar-collapse order-2 order-md-1">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="#home" class="nav-link">HOME</a>
+				</li>
+				<li class="nav-item">
+					<a href="#about" class="nav-link">ABOUT</a>
+				</li>
+				<li class="nav-item">
+					<a href="#portfolio" class="nav-link">PORTFOLIO</a>
+				</li>
+				<li class="nav-item">
+					<a href="#quotes" class="nav-link">QUOTES</a>
+				</li>
+				<li class="nav-item">
+					<a href="#contact" class="nav-link">CONTACT</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!--main content container with everything centered-->
+	<div id="mainContent" class="container mx-auto my-5 text-center">
+		<!--First Section Home grid 1row 1col everything centered-->
+		<section id="home" class="row py-5 my-5 justify-content-md-center">
+			<div class="col text-center">
+				<div class="card mx-auto">
+	  				<img id="profile" src="assets/profile.jpg" class="card-img-top mx-auto my-4 d-block" alt="Profile">
+		  			<div class="card-body">
+		    			<h1 id="namePlate" class="card-title">Surhud</h1>
+		    			<h5 class="card-text">Programmer ;</h5>
+						<p class="card-text">Code but keep it simple !</p>
+		  			</div>
+				</div>
+			</div>
+		</section>
+		
+		<!--Second Section About grid 1row 2cols with table everything centered-->
+		<section id="about" class="row py-5 my-5 justify-content-md-center">
+			<div class="col-md-6">
+				<p class="lead">As an enthusiastic and creative developer, I build simple, colourful and beautiful responsive web applications and some amazingly cool Android applications.</p>
+				<p class="lead">I don't have a classy professional photograph, thus, designed my own brand logo.</p>
+				<img src="assets/logo.png" class="img-fluid py-2 d-md-inline">
+				<p class="lead">As an aesthetic and thoughtful person, I draw freehand, create graphic designs and digital art, play PC games and write reflective quotes in my free time.</p>
+			</div>
+			<div class="col-md-6">
+				<table class="table">
+					<tbody>
+						<tr>
+				      		<th scope="row">Java</th>
+				      		<td>
+						      	<div class="progress my-2">
+									<div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</td>
+				    	</tr>
+				    	<tr>
+				      		<th scope="row">JavaScript</th>
+				      		<td>
+						      	<div class="progress my-2">
+									<div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</td>
+				    	</tr>
+				    	<tr>
+				      		<th scope="row">R</th>
+				      		<td>
+						      	<div class="progress my-2">
+									<div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</td>
+				    	</tr>
+				    	<tr>
+				      		<th scope="row">HTML</th>
+				      		<td>
+						      	<div class="progress my-2">
+  									<div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</td>
+				    	</tr>
+				    	<tr>
+				      		<th scope="row">CSS</th>
+				      		<td>
+						      	<div class="progress my-2">
+									<div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</td>
+				    	</tr>
+				    	<tr>
+				      		<th scope="row">PHP</th>
+				      		<td>
+						      	<div class="progress my-2">
+									<div class="progress-bar bg-warning" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</td>
+				    	</tr>		    	
+				    	<tr>
+				      		<th scope="row">Python</th>
+				      		<td>
+						      	<div class="progress my-2">
+									<div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</td>
+				    	</tr>
+				    	<tr>
+				      		<th scope="row">MongoDB</th>
+				      		<td>
+						      	<div class="progress my-2">
+									<div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</td>
+				    	</tr>
+				    	<tr>
+				      		<th scope="row">Android</th>
+				      		<td>
+						      	<div class="progress my-2">
+									<div class="progress-bar bg-info" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</td>
+				    	</tr>
+				    	<tr>
+				      		<th scope="row">NodeJS</th>
+				      		<td>
+						      	<div class="progress my-2">
+									<div class="progress-bar bg-info" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</td>
+				    	</tr>
+				    	<tr>
+				      		<th scope="row">Bootstrap</th>
+				      		<td>
+						      	<div class="progress my-2">
+									<div class="progress-bar bg-success" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</td>
+				    	</tr>
+				  	</tbody>
+				</table>
+			</div>
+		</section>
+
+		<!--Third Section Portfolio grid 1row 8cols everything centered-->
+		<section id="portfolio" class="row py-5 my-5 justify-content-md-center">
+			<div class="col-md-6">
+				<div class="card mx-auto">
+					<div class="card-body">
+						<h5 class="card-title"><img src="assets/node.png" width="50" height="50" class="d-inline-block" alt="node"> Quillsy</h5>
+						<p class="card-text">A web app for sharing writings and posts</p>
+						<a href="http://quillsy.herokuapp.com/" class="btn btn-outline-light" target="_blank">View Demo</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="card mx-auto">
+					<div class="card-body">
+						<h5 class="card-title"><img src="assets/node.png" width="50" height="50" class="d-inline-block" alt="node"> NightFall</h5>
+						<p class="card-text">A web app to display weather information</p>
+						<a href="http://nightfall-weather-app.herokuapp.com/" class="btn btn-outline-light" target="_blank">View Demo</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="card mx-auto">
+					<div class="card-body">
+						<h5 class="card-title"><img src="assets/node.png" width="50" height="50" class="d-inline-block" alt="node"> PurplePaper</h5>
+						<p class="card-text">An online, real-time Name, Place, Animal, Thing game</p>
+						<a href="http://purplepaper.herokuapp.com/" class="btn btn-outline-light" target="_blank">View Demo</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="card mx-auto">
+					<div class="card-body">
+						<h5 class="card-title"><img src="assets/web.png" width="50" height="50" class="d-inline-block" alt="web"> Expressive.JS</h5>
+						<p class="card-text">A real-time client-side Sentiment Analyzer</p>
+						<a href="https://github.com/surhud004/Expressive_JS" class="btn btn-outline-light" target="_blank">Know More</a>
+						<a href="https://surhud004.github.io/Expressive_JS/" class="btn btn-outline-light" target="_blank">View Demo</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="card mx-auto">
+					<div class="card-body">
+						<h5 class="card-title"><img src="assets/android.png" width="50" height="50" class="d-inline-block" alt="android"> CalX</h5>
+						<p class="card-text">A calorie tracking Android application</p>
+						<a href="https://github.com/surhud004/WHI_Project_Nutrition" class="btn btn-outline-light" target="_blank">Know More</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="card mx-auto">
+					<div class="card-body">
+						<h5 class="card-title"><img src="assets/bootstrap.png" width="50" height="50" class="d-inline-block" alt="bootstrap"> The Herald</h5>
+						<p class="card-text">A multi-page Bootstrap 4 Newspaper themed web design</p>
+						<a href="https://github.com/surhud004/Newspaper_Herald" class="btn btn-outline-light" target="_blank">Know More</a>
+						<a href="https://surhud004.github.io/Newspaper_Herald/" class="btn btn-outline-light" target="_blank">View Demo</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="card mx-auto">
+					<div class="card-body">
+						<h5 class="card-title"><img src="assets/bootstrap.png" width="50" height="50" class="d-inline-block" alt="bootstrap"> Museum of Icecream</h5>
+						<p class="card-text">A single-page Bootstrap 4 themed web design</p>
+						<a href="https://github.com/surhud004/Museum_of_Icecream" class="btn btn-outline-light" target="_blank">Know More</a>
+						<a href="https://surhud004.github.io/Museum_of_Icecream/" class="btn btn-outline-light" target="_blank">View Demo</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="card mx-auto">
+					<div class="card-body">
+						<h5 class="card-title"><img src="assets/php.png" width="50" height="50" class="d-inline-block" alt="php"> SherlockIpsum</h5>
+						<p class="card-text">A random quote generator from the Sherlock TV Series</p>
+						<a href="https://github.com/surhud004/SherlockIpsum" class="btn btn-outline-light" target="_blank">Know More</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--Fourth Section Quotes grid 1row no cols carousel slider with blockquote centered-->
+		<section id="quotes" class="row py-5 my-5 justify-content-md-center">
+			<div class="carousel slide py-5" data-ride="carousel">
+  				<div class="carousel-inner">
+    				<div class="carousel-item active">
+        				<blockquote class="blockquote">
+  							<p>"No work experience, but I do own a specific set of skills. You impart the experience, I'll render my skills." - Surhud</p>
+						</blockquote>
+    				</div>
+    				<div class="carousel-item">
+     					<blockquote class="blockquote">
+  							<p>"Hard work beats talent when talent doesn't work hard." - Tim Notke</p>
+						</blockquote>
+    				</div>
+    				<div class="carousel-item">
+        				<blockquote class="blockquote">
+  							<p>"Career is built upon excellence, excellence comes with experience, experience is gained only when you work with interest and passion." - Surhud</p>
+						</blockquote>
+    				</div>
+    				<div class="carousel-item">
+        				<blockquote class="blockquote">
+  							<p>"Sometimes you win. Sometimes you learn. Sometimes you learn how to win." - Surhud</p>
+						</blockquote>
+    				</div>
+    				<div class="carousel-item">
+      					<blockquote class="blockquote">
+  							<p>"Great minds discuss ideas. Average minds discuss events. Small minds discuss people." - Eleanor Roosevelt</p>
+						</blockquote>
+    				</div>
+  				</div>
+			</div>
+		</section>
+	
+		<!--Fifth Section Contact grid 1row 2cols centered-->
+		<section id="contact" class="row py-5 my-5 justify-content-md-center">
+			<div class="col-md-6">
+				<a href="mailto:surhud004@gmail.com" class="btn btn-outline-light"><img src="assets/email.png" width="50" height="50" alt="email"> Gmail</a>
+			</div>
+			<div class="col-md-6">
+				<a href="https://github.com/surhud004" class="btn btn-outline-light" target="_blank"><img src="assets/github.png" width="50" height="50" alt="github"> GitHub</a>
+			</div>
+		</section>
+
+		<footer class="page-footer">
+			<p>Designed and Coded by : surhud004 &copy; 2020</p> <!-- Build Date : 14th Jan 2020 -->
+		</footer>
+	</div>
+	<!-- JQuery -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<!-- Popper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="	sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<!-- Bootstrap JS -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<!-- Script JS -->
+	<script type="text/javascript">
+		//toggle light and dark classes based on the lightSwitch 
+		$("#lightSwitch").on("click", function() {
+    		if($("body").hasClass("light")) {
+	      		$("body").removeClass("light");
+	      		$(".card").css("background-color", "#171717");
+	      		$(".btn").removeClass("btn-outline-dark");
+	      		$(".btn").addClass("btn-outline-light");
+	    	} else {
+	      		$("body").addClass("light");
+	      		$(".card").css("background-color", "white");
+	      		$(".btn").removeClass("btn-outline-light");
+	      		$(".btn").addClass("btn-outline-dark");
+	    	}
+		});
+
+		//toggle scrolled class (scroll effect color change) on navbar when scroll bar position is greater than navbar height
+		$(function () {
+			$(document).scroll(function () {
+				var $nav = $("#mainNavbar");
+				$nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+			});
+		});
+
+		var fontcolors = ["#FF1493", "#74EE15", "#4DEEEA", "#FFE700" , "#FF6800", "#FF355E", "#FD5B78", "#CCFF00", "#66FF66", "#FF00CC"];
+		//pink, green, blue, yellow, orange, radical red, wild watermelon, electric lime, screaming green, hot magenta
+		
+		//random select colors from above array and assign
+		var randomcolortitle = fontcolors[Math.floor(Math.random() * fontcolors.length)];
+		document.getElementById('home').style.color = randomcolortitle;
+
+		var randomcolorbody = fontcolors[Math.floor(Math.random() * fontcolors.length)];
+		document.getElementById('mainContent').style.color = randomcolorbody;
+		//assign color to all table headings and button texts
+		var ths = document.getElementsByTagName('th');
+		for(var i = 0; i < ths.length; i++) {
+			ths[i].style.color = randomcolorbody;
+		}
+		var as = document.getElementsByTagName('a');
+		for(var i = 0; i < as.length; i++) {
+			as[i].style.color = randomcolorbody;
+		}
+	</script>
+</body>
+</html>
