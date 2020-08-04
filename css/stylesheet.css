@@ -24,6 +24,10 @@ th {
 .navbar-dark .navbar-toggler {
 	border: none;
 }
+.hexagon {
+	width: 100px;
+  	height: 100px;
+}
 .card {
 	width: 50%;
 	background-color: #171717;
@@ -33,11 +37,8 @@ th {
 	padding-left: 0;
 	padding-right: 0;
 }
-.table th, .table td {
-	border-top: none;
-}
-.progress {
-	background-color: #343a40;
+.carousel-indicators li {
+	background-color: grey;
 }
 #lightBtn {
 	color: grey;
@@ -51,12 +52,15 @@ th {
 }
 /*shrink font sizes at this screen size*/
 @media (max-width: 1200px) {
-	.card-title, p {
+	.img-fluid {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.card-title {
 		font-size: 1rem;
 	}
 	.card-text {
-		font-size: 0.75rem;
-		font-weight: 100;
+		font-size: 1rem;
 	}
 	.btn {
 		display: block;
@@ -64,5 +68,11 @@ th {
 	}
 	#namePlate {
 		font-size: 2rem;
+	}
+	#profile {
+		width: 60%;
+	}
+	#about p {
+		font-size: 1rem;
 	}
 }
