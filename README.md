@@ -1,4 +1,4 @@
 # surhud004.github.io
 My Professional Portfolio Website
 
-Updated on : 04th August 2020
+Updated on : 13th October 2020
