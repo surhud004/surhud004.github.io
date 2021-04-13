@@ -70,10 +70,14 @@
 		<section id="about" class="row py-5 my-5 justify-content-md-center">
 			<div class="row">
 				<div class="col-md-12">
-					<p class="lead">As an enthusiastic and creative developer, I build simple, colourful and beautiful responsive web applications and some amazingly cool Android applications.</p>
-					<p class="lead">I don't have a classy professional photograph, thus, designed my own brand logo.</p>
+					<blockquote class="blockquote">
+						<p class="mb-0">"Great software engineers are not tied to languages or technologies, 
+							because picking up a new one is easy."</p>
+						<footer class="blockquote-footer">surhud004</footer>
+					</blockquote>
+					<p class="lead">As an enthusiastic and creative developer, I build simple, colourful and responsive web applications as well as some amazingly cool Android apps.</p>
 					<img src="assets/logo.png" class="img-fluid py-2 d-inline-block" width="200" height="200" title="Logo">
-					<p class="lead">As an aesthetic and thoughtful person, I draw freehand, create graphic designs and digital art, play PC games and write reflective quotes in my free time.</p>
+					<p class="lead">Being an aesthetic and thoughtful person, I draw freehand, create graphic designs and digital art, play PC games and write reflective quotes in my free time.</p>
 				</div>
 			</div>
 			<div class="row">
@@ -82,6 +86,7 @@
 					<img class="hexagon" src="assets/bootstrap.png" title="Bootstrap">
 					<img class="hexagon" src="assets/ethereum.png" title="Ethereum">
 					<img class="hexagon" src="assets/java.png" title="Java">
+					<img class="hexagon" src="assets/nest.png" title="NestJS">
 					<img class="hexagon" src="assets/node.png" title="Node.js">
 					<img class="hexagon" src="assets/php.png" title="PHP">
 					<img class="hexagon" src="assets/react.png" title="React.js">
@@ -94,15 +99,15 @@
 		<section id="portfolio" class="row py-5 my-5 justify-content-md-center">
 			<div class="row my-4">
 				<div class="col-md-6">
-					<img src="assets/bigdeal.jpg" class="img-fluid rounded">
+					<img src="assets/foodish.jpg" class="img-fluid rounded">
 				</div>
 				<div class="col-md-6">
 					<div class="card mx-auto">
 						<div class="card-body">
-							<h5 class="card-title"><img src="assets/react.png" width="50" height="50" class="d-inline-block" alt="vue" title="React.js"> BigDeal</h5>
-							<p class="card-text">A MERN full-stack deals tracker app</p>
-							<a href="https://github.com/hatchways/team-watermelon" class="btn btn-outline-light" target="_blank">Know More</a>
-							<a href="https://bigdeal-app.herokuapp.com/" class="btn btn-outline-light" target="_blank">View Demo</a>
+							<h5 class="card-title"><img src="assets/node.png" width="50" height="50" class="d-inline-block" alt="vue" title="Node.js"> Foodish API</h5>
+							<p class="card-text">A REST API to GET a random picture of food dish.</p>
+							<a href="https://github.com/surhud004/Foodish#readme" class="btn btn-outline-light" target="_blank">Know More</a>
+							<a href="https://foodish-api.herokuapp.com/" class="btn btn-outline-light" target="_blank">View Demo</a>
 						</div>
 					</div>
 				</div>
@@ -209,9 +214,9 @@
 		</section>
 
 		<footer class="page-footer">
-			<p>Designed and Coded by : surhud004 &copy; 2020</p> <!-- Build Date : 14th Jan 2020 Update Date : 13th October 2020 -->
-			<p><small>Updated on : 13th October 2020</small></p>
-			<p><img src="https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fsurhud004.github.io%2F" alt="hits"></p>
+			<p>Designed and Coded by : surhud004 &copy; <span id="currentYear"></span></p> <!-- Build Date : 14th Jan 2020 Update Date : 13th April 2021 -->
+			<p><small>Updated on : 13th April 2021</small></p>
+			<!-- <p><img src="https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fsurhud004.github.io%2F" alt="hits"></p> -->
 		</footer>
 	</div>
 	<!-- JQuery -->
@@ -222,6 +227,9 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 	<!-- Script JS -->
 	<script type="text/javascript">
+		const currentYear = new Date().getFullYear();
+		document.getElementById("currentYear").innerText = currentYear;
+
 		//toggle light and dark classes based on the lightSwitch 
 		$("#lightSwitch").on("click", function() {
     		if($("body").hasClass("light")) {

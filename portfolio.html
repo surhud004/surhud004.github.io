@@ -265,8 +265,8 @@
 		</section>
 
 		<footer class="page-footer">
-			<p>Designed and Coded by : surhud004 &copy; 2020</p> <!-- Build Date : 14th Jan 2020 Update Date : 13th October 2020 -->
-			<p><small>Updated on : 13th October 2020</small></p>
+			<p>Designed and Coded by : surhud004 &copy; <span id="currentYear"></span></p> <!-- Build Date : 14th Jan 2020 Update Date : 13th April 2021 -->
+			<p><small>Updated on : 13th April 2021</small></p>
 		</footer>
 	</div>
 	<!-- JQuery -->
@@ -277,6 +277,9 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 	<!-- Script JS -->
 	<script type="text/javascript">
+		const currentYear = new Date().getFullYear();
+		document.getElementById("currentYear").innerText = currentYear;
+
 		//toggle light and dark classes based on the lightSwitch 
 		$("#lightSwitch").on("click", function() {
     		if($("body").hasClass("light")) {
